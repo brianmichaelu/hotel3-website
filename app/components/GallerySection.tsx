@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { useeffect,useState } from 'react';
+import { useEffect,useState } from 'react';
 
 export default function GallerySection() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
