@@ -51,13 +51,13 @@ export default function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               onClick={() => scrollToSection('rooms')}
-              className="px-8 py-3 bg-gold text-white font-light text-base rounded hover:bg-gold/90 transition-all duration-300 uppercase tracking-wider"
+              className="px-8 py-3 bg-gold text-white font-light text-base rounded hover:bg-gold/90 transition-all duration-300 uppercase tracking-wider cursor-pointer"
             >
               Explore Rooms
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="px-8 py-3 border-2 border-white text-white font-light text-base rounded hover:bg-white/10 transition-all duration-300 uppercase tracking-wider"
+              className="px-8 py-3 border-2 border-white text-white font-light text-base rounded hover:bg-white/10 transition-all duration-300 uppercase tracking-wider cursor-pointer"
             >
               Book Now
             </button>
