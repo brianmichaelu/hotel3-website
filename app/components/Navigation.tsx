@@ -70,15 +70,15 @@ export default function Navigation() {
 >
   {isOpen ? '×' : '☰'}
 </button>
-            ))}
-            <button
+            ))
+          <button
               onClick={() => scrollToSection('contact')}
               className="w-full mx-4 mt-4 px-6 py-2 bg-gold text-white text-sm font-light rounded hover:bg-gold/90 transition-colors"
             >
               Book Now
             </button>
           </div>
-        )}
+        )
       </div>
     </nav>
   );
