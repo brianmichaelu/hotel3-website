@@ -35,10 +35,10 @@ export default function GallerySection() {
 }, [selectedImage]);
 
   const galleryimage = [
-    { src: '/image/gallery-1.png', alt: 'Luxury Lobby' },
-    { src: '/image/gallery-2.png', alt: 'Swimming Pool' },
-    { src: '/image/gallery-3.png', alt: 'Restaurant' },
-    { src: '/image/gallery-4.png', alt: 'Guest Room' },
+    { src: '/images/gallery-1.png', alt: 'Luxury Lobby' },
+    { src: '/images/gallery-2.png', alt: 'Swimming Pool' },
+    { src: '/images/gallery-3.png', alt: 'Restaurant' },
+    { src: '/images/gallery-4.png', alt: 'Guest Room' },
   ];
 
   return (
