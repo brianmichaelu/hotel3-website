@@ -1,10 +1,38 @@
 'use client';
 
 import Image from 'next/image';
-import { useState } from 'react';
+import { useeffect,useState } from 'react';
 
 export default function GallerySection() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
+
+  useEffect(() => {
+  const handleKeyDown = (event: KeyboardEvent) => {
+    if (selectedImage === null) return;
+
+    if (event.key === "ArrowRight") {
+      setSelectedImage((prev) =>
+        prev === null ? 0 : prev === images.length - 1 ? 0 : prev + 1
+      );
+    }
+
+    if (event.key === "ArrowLeft") {
+      setSelectedImage((prev) =>
+        prev === null ? 0 : prev === 0 ? images.length - 1 : prev - 1
+      );
+    }
+
+    if (event.key === "Escape") {
+      setSelectedImage(null);
+    }
+  };
+
+  window.addEventListener("keydown", handleKeyDown);
+
+  return () => {
+    window.removeEventListener("keydown", handleKeyDown);
+  };
+}, [selectedImage]);
 
   const galleryImages = [
     { src: '/images/gallery-1.png', alt: 'Luxury Lobby' },
