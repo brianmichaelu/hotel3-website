@@ -30,7 +30,7 @@ export default function Footer() {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-white/80 hover:text-gold transition-colors font-light text-sm"
+                    className="text-white/80 hover:text-gold transition-colors font-light text-sm cursor-pointer"
                   >
                     {link.label}
                   </a>
@@ -47,7 +47,7 @@ export default function Footer() {
                 <p className="text-white/80">Mobile / WhatsApp:</p>
                 <a
                   href="https://wa.me/255689824682"
-                  className="text-gold hover:text-gold/80 transition-colors"
+                  className="text-gold hover:text-gold/80 transition-colors cursor-pointer"
                 >
                   +255 689 824 682
                 </a>
@@ -56,7 +56,7 @@ export default function Footer() {
                 <p className="text-white/80">Email:</p>
                 <a
                   href="mailto:lubrun.enterprises@gmail.com"
-                  className="text-gold hover:text-gold/80 transition-colors"
+                  className="text-gold hover:text-gold/80 transition-colors cursor-pointer"
                 >
                   lubrun.enterprises@gmail.com
                 </a>
@@ -85,13 +85,13 @@ export default function Footer() {
               © {currentYear} Dar Serenity Resort. All rights reserved.
             </p>
             <div className="flex gap-6">
-              <a href="#" className="text-white/70 hover:text-gold transition-colors font-light text-sm">
+              <a href="#" className="text-white/70 hover:text-gold transition-colors font-light text-sm cursor-pointer">
                 Privacy Policy
               </a>
-              <a href="#" className="text-white/70 hover:text-gold transition-colors font-light text-sm">
+              <a href="#" className="text-white/70 hover:text-gold transition-colors font-light text-sm cursor-pointer">
                 Terms & Conditions
               </a>
-              <a href="#" className="text-white/70 hover:text-gold transition-colors font-light text-sm">
+              <a href="#" className="text-white/70 hover:text-gold transition-colors font-light text-sm cursor-pointer">
                 Sitemap
               </a>
             </div>
