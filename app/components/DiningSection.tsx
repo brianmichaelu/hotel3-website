@@ -28,7 +28,7 @@ export default function DiningSection() {
 
           {/* Content */}
           <div>
-            <h2 className="text-4xl sm:text-5xl font-light text-brown mb-6">
+            <h2 className="text-4xl sm:text-5xl font-light text-[#2B1A10] mb-6">
               Culinary Excellence
             </h2>
             <div className="h-1 w-24 bg-gold mb-8" />
@@ -49,7 +49,7 @@ export default function DiningSection() {
           {diningFeatures.map((feature, idx) => (
             <div key={idx} className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <div className="text-4xl mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-light text-brown mb-2">{feature.title}</h3>
+              <h3 className="text-xl font-light text-[#2B1A10] mb-2">{feature.title}</h3>
               <p className="text-gray-700 font-light text-sm leading-relaxed">{feature.desc}</p>
             </div>
           ))}
