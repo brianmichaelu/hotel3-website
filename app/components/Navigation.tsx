@@ -64,25 +64,12 @@ export default function Navigation() {
 
           {/* Mobile Menu Button */}
           <button
-  onClick={() => setIsMenuOpen(!isMenuOpen)}
+  onClick={() => setIsOpen(!isOpen)}
   className="md:hidden flex items-center justify-center w-11 h-11 rounded-full bg-[#2B1A10] text-white text-2xl font-bold shadow-lg focus:outline-none cursor-pointer z-50"
   aria-label="Toggle menu"
 >
-  {isMenuOpen ? '×' : '☰'}
+  {isOpen ? '×' : '☰'}
 </button>
-        </div>
-
-        {/* Mobile Menu */}
-        {isOpen && (
-          <div className="lg:hidden pb-6 border-t border-gold/10">
-            {navLinks.map((link) => (
-              <button
-                key={link.id}
-                onClick={() => scrollToSection(link.id)}
-                className="block w-full text-left px-4 py-3 text-sm text-gray-700 hover:bg-cream transition-colors font-light"
-              >
-                {link.label}
-              </button>
             ))}
             <button
               onClick={() => scrollToSection('contact')}
