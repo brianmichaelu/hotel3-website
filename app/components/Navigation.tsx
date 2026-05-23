@@ -64,25 +64,12 @@ export default function Navigation() {
 
           {/* Mobile Menu Button */}
           <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden w-6 h-6 flex flex-col justify-center items-center space-y-1.5"
-          >
-            <span
-              className={`w-6 h-0.5 bg-brown transition-all ${
-                isOpen ? 'rotate-45 translate-y-2' : ''
-              }`}
-            />
-            <span
-              className={`w-6 h-0.5 bg-brown transition-all ${
-                isOpen ? 'opacity-0' : ''
-              }`}
-            />
-            <span
-              className={`w-6 h-0.5 bg-brown transition-all ${
-                isOpen ? '-rotate-45 -translate-y-2' : ''
-              }`}
-            />
-          </button>
+  onClick={() => setIsMenuOpen(!isMenuOpen)}
+  className="md:hidden flex items-center justify-center w-11 h-11 rounded-full bg-[#2B1A10] text-white text-2xl font-bold shadow-lg focus:outline-none cursor-pointer z-50"
+  aria-label="Toggle menu"
+>
+  {isMenuOpen ? '×' : '☰'}
+</button>
         </div>
 
         {/* Mobile Menu */}
