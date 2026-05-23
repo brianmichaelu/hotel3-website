@@ -81,7 +81,7 @@ Message: ${formData.message}`;
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 mb-4"
               >
-                <button className="px-6 py-3 bg-green-500 text-white font-light text-sm rounded hover:bg-green-600 transition-colors uppercase tracking-wider flex items-center gap-2">
+                <button className="px-6 py-3 bg-green-500 text-white font-light text-sm rounded hover:bg-green-600 transition-colors uppercase tracking-wider flex items-center gap-2 cursor-pointer">
                   💬 WhatsApp
                   <span className="font-semibold">+255 689 824 682</span>
                 </button>
