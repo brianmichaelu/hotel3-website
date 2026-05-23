@@ -196,10 +196,10 @@ Message: ${formData.message}`;
               </div>
 
               <button
-                type="submit"
-                className="w-full py-3 bg-gold text-white font-light text-sm rounded hover:bg-gold/90 transition-colors uppercase tracking-wider"
+                    type="submit"
+                    className="w-full bg-gold text-white py-4 px-6 rounded-full font-light tracking-wide hover:bg-gold/90 transition-colors cursor-pointer"
               >
-                Send on WhatsApp
+                    Send on WhatsApp
               </button>
 
               <p className="text-xs text-gray-600 font-light mt-4 text-center">
