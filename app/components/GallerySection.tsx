@@ -12,13 +12,13 @@ export default function GallerySection() {
 
     if (event.key === "ArrowRight") {
       setSelectedImage((prev) =>
-        prev === null ? 0 : prev === images.length - 1 ? 0 : prev + 1
+        prev === null ? 0 : prev === image.length - 1 ? 0 : prev + 1
       );
     }
 
     if (event.key === "ArrowLeft") {
       setSelectedImage((prev) =>
-        prev === null ? 0 : prev === 0 ? images.length - 1 : prev - 1
+        prev === null ? 0 : prev === 0 ? image.length - 1 : prev - 1
       );
     }
 
@@ -34,11 +34,11 @@ export default function GallerySection() {
   };
 }, [selectedImage]);
 
-  const galleryImages = [
-    { src: '/images/gallery-1.png', alt: 'Luxury Lobby' },
-    { src: '/images/gallery-2.png', alt: 'Swimming Pool' },
-    { src: '/images/gallery-3.png', alt: 'Restaurant' },
-    { src: '/images/gallery-4.png', alt: 'Guest Room' },
+  const galleryimage = [
+    { src: '/image/gallery-1.png', alt: 'Luxury Lobby' },
+    { src: '/image/gallery-2.png', alt: 'Swimming Pool' },
+    { src: '/image/gallery-3.png', alt: 'Restaurant' },
+    { src: '/image/gallery-4.png', alt: 'Guest Room' },
   ];
 
   return (
@@ -56,7 +56,7 @@ export default function GallerySection() {
 
         {/* Gallery Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-          {galleryImages.map((image, idx) => (
+          {galleryimage.map((image, idx) => (
             <div
               key={idx}
               className="relative h-64 sm:h-80 rounded-lg overflow-hidden cursor-pointer group"
@@ -85,8 +85,8 @@ export default function GallerySection() {
           >
             <div className="relative max-w-4xl w-full max-h-[90vh]">
               <Image
-                src={galleryImages[selectedImage].src}
-                alt={galleryImages[selectedImage].alt}
+                src={galleryimage[selectedImage].src}
+                alt={galleryimage[selectedImage].alt}
                 width={1200}
                 height={800}
                 className="w-full h-full object-contain"
@@ -102,7 +102,7 @@ export default function GallerySection() {
                   className="text-white hover:text-gold transition-colors text-lg"
                   onClick={(e) => {
                     e.stopPropagation();
-                    setSelectedImage(selectedImage === 0 ? galleryImages.length - 1 : selectedImage - 1);
+                    setSelectedImage(selectedImage === 0 ? galleryimage.length - 1 : selectedImage - 1);
                   }}
                 >
                   ← Previous
@@ -111,7 +111,7 @@ export default function GallerySection() {
                   className="text-white hover:text-gold transition-colors text-lg"
                   onClick={(e) => {
                     e.stopPropagation();
-                    setSelectedImage(selectedImage === galleryImages.length - 1 ? 0 : selectedImage + 1);
+                    setSelectedImage(selectedImage === galleryimage.length - 1 ? 0 : selectedImage + 1);
                   }}
                 >
                   Next →
