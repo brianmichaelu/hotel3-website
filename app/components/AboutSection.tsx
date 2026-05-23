@@ -46,7 +46,7 @@ export default function AboutSection() {
           </div>
 
           <div>
-            <h2 className="text-4xl sm:text-5xl font-light text-[#3B2416] mb-6">Strategic Location</h3>
+            <h3 className="text-4xl sm:text-5xl font-light text-[#3B2416] mb-6">Strategic Location</h3>
             <p className="text-gray-700 font-light leading-relaxed mb-4">
               Located in the heart of Dar es Salaam, our resort offers seamless access to the city's vibrant culture, shopping, and entertainment while maintaining an atmosphere of peaceful luxury.
             </p>
