@@ -112,7 +112,7 @@ export default function RoomsSection() {
       </li>
     ))}
   </ul>
-</div>
+
 
                 {/* WhatsApp Button */}
                 <button
