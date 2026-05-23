@@ -60,10 +60,10 @@ Message: ${formData.message}`;
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-semibold text-[#3B2416] mb-6">
-  Get In Touch
-</h2>
+                Get In Touch
+          </h2>
           <div className="h-1 w-24 bg-gold mx-auto mb-8" />
-          <p className="text-lg text-gray-700 font-semibold max-w-3xl mx-auto">
+          <p className="text-lg text-gray-700 font-light max-w-3xl mx-auto">
             Have questions or ready to book? We're here to help
           </p>
         </div>
