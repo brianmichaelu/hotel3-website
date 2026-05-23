@@ -97,7 +97,7 @@ Message: ${formData.message}`;
                 href="mailto:lubrun.enterprises@gmail.com"
                 className="flex items-center gap-3 mb-4"
               >
-                <button className="px-6 py-3 bg-blue-600 text-white font-light text-sm rounded hover:bg-blue-700 transition-colors uppercase tracking-wider flex items-center gap-2">
+                <button className="px-6 py-3 bg-blue-600 text-white font-light text-sm rounded hover:bg-blue-700 transition-colors uppercase tracking-wider flex items-center gap-2 cursor pointer">
                   ✉️ Email
                   <span className="font-semibold">Send Message</span>
                 </button>
