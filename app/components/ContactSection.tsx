@@ -71,10 +71,10 @@ Message: ${formData.message}`;
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Info */}
           <div>
-            <h3 className="text-2xl font-semibold text-brown mb-8">Contact Details</h3>
+            <h3 className="text-2xl font-semibold text-[#3B2416] mb-8">Contact Details</h3>
 
             <div className="mb-8">
-              <h4 className="text-lg font-semibold text-brown mb-4">Mobile / WhatsApp</h4>
+              <h4 className="text-lg font-semibold text-[#3B2416] mb-4">Mobile / WhatsApp</h4>
               <a
                 href="https://wa.me/255689824682"
                 target="_blank"
@@ -92,7 +92,7 @@ Message: ${formData.message}`;
             </div>
 
             <div className="mb-8">
-              <h4 className="text-lg font-semibold text-brown mb-4">Email</h4>
+              <h4 className="text-lg font-semibold text-[#3B2416] mb-4">Email</h4>
               <a
                 href="mailto:lubrun.enterprises@gmail.com"
                 className="flex items-center gap-3 mb-4"
@@ -108,7 +108,7 @@ Message: ${formData.message}`;
             </div>
 
             <div className="bg-cream p-8 rounded-lg">
-              <h4 className="text-lg font-semibold text-brown mb-4">Quick Response</h4>
+              <h4 className="text-lg font-semibold text-[#3B2416] mb-4">Quick Response</h4>
               <p className="text-sm text-gray-700 font-semibold leading-relaxed">
                 We're committed to responding to all inquiries within 2 hours. For urgent matters, please use WhatsApp for immediate assistance.
               </p>
@@ -119,7 +119,7 @@ Message: ${formData.message}`;
           <div>
             <form onSubmit={handleSubmit} className="bg-cream p-8 rounded-lg">
               <div className="mb-6">
-                <label className="block text-sm font-semibold text-brown mb-2">Full Name *</label>
+                <label className="block text-sm font-semibold text-[#3B2416] mb-2">Full Name *</label>
                 <input
                   type="text"
                   name="name"
@@ -132,7 +132,7 @@ Message: ${formData.message}`;
               </div>
 
               <div className="mb-6">
-                <label className="block text-sm font-semibold text-brown mb-2">Phone Number *</label>
+                <label className="block text-sm font-semibold text-[#3B2416] mb-2">Phone Number *</label>
                 <input
                   type="tel"
                   name="phone"
@@ -146,7 +146,7 @@ Message: ${formData.message}`;
 
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <div>
-                  <label className="block text-sm font-semibold text-brown mb-2">Check-in *</label>
+                  <label className="block text-sm font-semibold text-[#3B2416] mb-2">Check-in *</label>
                   <input
                     type="date"
                     name="checkIn"
@@ -157,7 +157,7 @@ Message: ${formData.message}`;
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold text-brown mb-2">Check-out *</label>
+                  <label className="block text-sm font-semibold text-[#3B2416] mb-2">Check-out *</label>
                   <input
                     type="date"
                     name="checkOut"
@@ -170,7 +170,7 @@ Message: ${formData.message}`;
               </div>
 
               <div className="mb-6">
-                <label className="block text-sm font-semibold text-brown mb-2">Room Type *</label>
+                <label className="block text-sm font-semibold text-[#3B2416] mb-2">Room Type *</label>
                 <select
                   name="roomType"
                   value={formData.roomType}
@@ -184,7 +184,7 @@ Message: ${formData.message}`;
               </div>
 
               <div className="mb-6">
-                <label className="block text-sm font-semibold text-brown mb-2">Message</label>
+                <label className="block text-sm font-semibold text-[#3B2416] mb-2">Message</label>
                 <textarea
                   name="message"
                   value={formData.message}
