@@ -93,11 +93,13 @@ export default function RoomsSection() {
 
               {/* Room Info */}
               <div className="bg-white p-6 sm:p-8">
-  <h3 className="text-2xl font-light text-brown mb-3">{room.name}</h3>
+  <h3 className="text-2xl sm:text-3xl font-semibold text-[#2B1A10] mb-3">
+  {room.name}
+</h3>
 
-  <p className="text-gold text-lg font-semibold mb-4">
-    {room.price}
-  </p>
+<p className="text-lg sm:text-xl font-bold text-[#9A6A2F] mb-4">
+  {room.price}
+</p>
 
   <p className="text-gray-700 text-sm font-light mb-6 leading-relaxed">
     {room.description}
