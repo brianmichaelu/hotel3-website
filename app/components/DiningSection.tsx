@@ -28,7 +28,7 @@ export default function DiningSection() {
 
           {/* Content */}
           <div>
-            <h2 className="text-4xl sm:text-5xl font-light text-[#2B1A10] mb-6">
+            <h2 className="text-4xl sm:text-5xl font-light text-[#3B2416] mb-6">
               Culinary Excellence
             </h2>
             <div className="h-1 w-24 bg-gold mb-8" />
