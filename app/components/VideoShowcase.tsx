@@ -37,7 +37,7 @@ export default function VideoShowcase() {
 
           {/* Text Content */}
           <div className="lg:pl-8">
-            <h2 className="text-4xl sm:text-5xl font-light text-brown mb-6 leading-tight">
+            <h2 className="text-4xl sm:text-5xl font-light text-[#3B2416] mb-6">
               Your Sanctuary Awaits
             </h2>
             <p className="text-gray-700 text-lg font-light mb-6 leading-relaxed">
