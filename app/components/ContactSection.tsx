@@ -59,7 +59,7 @@ Message: ${formData.message}`;
     <section id="contact" className="py-20 sm:py-28 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-semibold text-[#3B2416] mb-6">
+          <h2 className="text-4xl sm:text-5xl font-light text-[#3B2416] mb-6">
                 Get In Touch
           </h2>
           <div className="h-1 w-24 bg-gold mx-auto mb-8" />
