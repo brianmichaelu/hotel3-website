@@ -15,6 +15,7 @@ const rooms: Room[] = [
     id: '1',
     name: 'Standard Room',
     image: '/images/room-standard.png',
+    price: 'From TZS 45,000 / night',
     description:
       'Elegantly appointed with contemporary furnishings and premium amenities. Perfect for business travelers and leisure guests.',
     features: ['King or Twin Bed', 'Marble Bathroom', 'High-Speed WiFi', 'City or Garden View', 'Rainfall Shower'],
@@ -23,6 +24,7 @@ const rooms: Room[] = [
     id: '2',
     name: 'Deluxe Room',
     image: '/images/room-deluxe.png',
+    price: 'From TZS 65,000 / night',
     description:
       'Spacious and luxurious with enhanced amenities. Features a separate seating area and premium bedding for ultimate comfort.',
     features: [
@@ -38,6 +40,7 @@ const rooms: Room[] = [
     id: '3',
     name: 'Executive Suite',
     image: '/images/room-executive.png',
+    price: 'From TZS 95,000 / night',
     description:
       'The epitome of luxury with stunning views, exquisite furnishings, and exclusive perks. Your personal sanctuary in the city.',
     features: [
@@ -51,7 +54,6 @@ const rooms: Room[] = [
     ],
   },
 ];
-
 export default function RoomsSection() {
   const handleWhatsAppInquiry = (roomName: string) => {
     const message = `Hello! I'm interested in the ${roomName} at Dar Serenity Resort. Could you provide more information and availability?`;
