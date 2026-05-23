@@ -93,20 +93,26 @@ export default function RoomsSection() {
 
               {/* Room Info */}
               <div className="bg-white p-6 sm:p-8">
-                <h3 className="text-2xl font-light text-brown mb-3">{room.name}</h3>
-                <p className="text-gray-700 text-sm font-light mb-6 leading-relaxed">
-                  {room.description}
-                </p>
+  <h3 className="text-2xl font-light text-brown mb-3">{room.name}</h3>
 
-                {/* Features */}
-                <ul className="space-y-2 mb-8">
-                  {room.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start">
-                      <span className="text-gold mr-3 font-light">✓</span>
-                      <span className="text-sm text-gray-600 font-light">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
+  <p className="text-gold text-lg font-semibold mb-4">
+    {room.price}
+  </p>
+
+  <p className="text-gray-700 text-sm font-light mb-6 leading-relaxed">
+    {room.description}
+  </p>
+
+  {/* Features */}
+  <ul className="space-y-2 mb-8">
+    {room.features.map((feature, idx) => (
+      <li key={idx} className="flex items-start">
+        <span className="text-gold mr-3 font-light">✓</span>
+        <span className="text-sm text-gray-600 font-light">{feature}</span>
+      </li>
+    ))}
+  </ul>
+</div>
 
                 {/* WhatsApp Button */}
                 <button
