@@ -12,13 +12,13 @@ export default function GallerySection() {
 
     if (event.key === "ArrowRight") {
       setSelectedImage((prev) =>
-        prev === null ? 0 : prev === images.length - 1 ? 0 : prev + 1
+        prev === null ? 0 : prev === galleryimage.length - 1 ? 0 : prev + 1
       );
     }
 
     if (event.key === "ArrowLeft") {
       setSelectedImage((prev) =>
-        prev === null ? 0 : prev === 0 ? images.length - 1 : prev - 1
+        prev === null ? 0 : prev === 0 ? galleryimage.length - 1 : prev - 1
       );
     }
 
