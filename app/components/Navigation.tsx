@@ -72,28 +72,32 @@ export default function Navigation() {
       </Link>
 
       {/* Desktop Navigation */}
-      <nav className="hidden md:flex items-center gap-10 ml-20" aria-label="Main navigation">
-      </nav>
-        <Link href="#home" className="text-brown hover:text-gold transition-colors uppercase tracking-wider text-sm">
-          Home
-        </Link>
-        <Link href="#rooms" className="text-brown hover:text-gold transition-colors uppercase tracking-wider text-sm">
-          Rooms
-        </Link>
-        <Link href="#dining" className="text-brown hover:text-gold transition-colors uppercase tracking-wider text-sm">
-          Dining
-        </Link>
-        <Link href="#gallery" className="text-brown hover:text-gold transition-colors uppercase tracking-wider text-sm">
-          Gallery
-        </Link>
-        <Link href="#about" className="text-brown hover:text-gold transition-colors uppercase tracking-wider text-sm">
-          About
-        </Link>
-        <Link href="#contact" className="text-brown hover:text-gold transition-colors uppercase tracking-wider text-sm">
-          Contact
-        </Link>
-      </div>
+     
+<nav className="hidden md:flex items-center gap-10 ml-20" aria-label="Main navigation">
+  <Link href="#home" className="text-[#2B1A10] hover:text-[#C8A45D] transition-colors uppercase tracking-wider text-sm">
+    Home
+  </Link>
 
+  <Link href="#rooms" className="text-[#2B1A10] hover:text-[#C8A45D] transition-colors uppercase tracking-wider text-sm">
+    Rooms
+  </Link>
+
+  <Link href="#dining" className="text-[#2B1A10] hover:text-[#C8A45D] transition-colors uppercase tracking-wider text-sm">
+    Dining
+  </Link>
+
+  <Link href="#gallery" className="text-[#2B1A10] hover:text-[#C8A45D] transition-colors uppercase tracking-wider text-sm">
+    Gallery
+  </Link>
+
+  <Link href="#about" className="text-[#2B1A10] hover:text-[#C8A45D] transition-colors uppercase tracking-wider text-sm">
+    About
+  </Link>
+
+  <Link href="#contact" className="text-[#2B1A10] hover:text-[#C8A45D] transition-colors uppercase tracking-wider text-sm">
+    Contact
+  </Link>
+</nav>
       {/* Book Button */}
       <div className="hidden md:flex ml-auto">
         {/* Book Button */}
