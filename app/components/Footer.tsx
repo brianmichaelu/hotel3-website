@@ -85,12 +85,12 @@ export default function Footer() {
               © {currentYear} Dar Serenity Resort. All rights reserved.
             </p>
             <a
-                href="#gallery"
-                aria-label="View the resort gallery"
-                className="inline-flex items-center justify-center px-6 py-3 border-2 border-[#8B5E24] text-[#2B1A10] font-semibold text-sm rounded hover:bg-[#8B5E24] hover:text-white transition-colors uppercase tracking-wider cursor-pointer"
-            >
-                View Gallery
-          </a>
+  href="#gallery"
+  aria-label="View the resort gallery"
+  className="inline-flex items-center justify-center px-6 py-3 border-2 border-[#C8A45D] text-[#C8A45D] font-semibold text-sm rounded hover:bg-[#C8A45D] hover:text-[#2B1A10] transition-colors uppercase tracking-wider cursor-pointer"
+>
+  View Gallery
+</a>
           </div>
         </div>
       </div>
