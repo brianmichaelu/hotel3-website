@@ -46,6 +46,7 @@ export default function VideoShowcase() {
             <p className="text-gray-700 text-lg font-light mb-8 leading-relaxed">
               Our luxury accommodations, world-class amenities, and warm hospitality create the perfect setting for an unforgettable experience in beautiful Dar es Salaam.
             </p>
+           
             <div className="flex flex-col sm:flex-row gap-4">
   <a
     href="#rooms"
@@ -53,6 +54,8 @@ export default function VideoShowcase() {
   >
     Discover More
   </a>
+
+  <span className="sr-only"> </span>
 
   <a
     href="#gallery"
