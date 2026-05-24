@@ -26,7 +26,7 @@ export default function Navigation() {
 
     const startPosition = window.pageYOffset;
     const distance = targetPosition - startPosition;
-    const duration = 1000;
+    const duration = 900;
     let startTime: number | null = null;
 
     const animation = (currentTime: number) => {
