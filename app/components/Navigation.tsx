@@ -88,6 +88,68 @@ export default function Navigation() {
   </span>
 </button>
     </div>
+    {/* Mobile Dropdown Menu */}
+{isOpen && (
+  <div className="md:hidden absolute top-20 left-0 w-full bg-white border-t border-[#C8A45D]/30 shadow-lg z-50">
+    <div className="flex flex-col px-6 py-6 space-y-5">
+      <Link
+        href="#home"
+        onClick={() => setIsOpen(false)}
+        className="text-[#2B1A10] hover:text-[#C8A45D] uppercase tracking-wider text-sm"
+      >
+        Home
+      </Link>
+
+      <Link
+        href="#rooms"
+        onClick={() => setIsOpen(false)}
+        className="text-[#2B1A10] hover:text-[#C8A45D] uppercase tracking-wider text-sm"
+      >
+        Rooms
+      </Link>
+
+      <Link
+        href="#dining"
+        onClick={() => setIsOpen(false)}
+        className="text-[#2B1A10] hover:text-[#C8A45D] uppercase tracking-wider text-sm"
+      >
+        Dining
+      </Link>
+
+      <Link
+        href="#gallery"
+        onClick={() => setIsOpen(false)}
+        className="text-[#2B1A10] hover:text-[#C8A45D] uppercase tracking-wider text-sm"
+      >
+        Gallery
+      </Link>
+
+      <Link
+        href="#about"
+        onClick={() => setIsOpen(false)}
+        className="text-[#2B1A10] hover:text-[#C8A45D] uppercase tracking-wider text-sm"
+      >
+        About
+      </Link>
+
+      <Link
+        href="#contact"
+        onClick={() => setIsOpen(false)}
+        className="text-[#2B1A10] hover:text-[#C8A45D] uppercase tracking-wider text-sm"
+      >
+        Contact
+      </Link>
+
+      <Link
+        href="#contact"
+        onClick={() => setIsOpen(false)}
+        className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-[#C8A45D] text-[#2B1A10] font-medium text-sm uppercase tracking-wider border border-[#C8A45D]"
+      >
+        Book Now
+      </Link>
+    </div>
+  </div>
+)}
   </div>
 </nav>
   );
