@@ -75,14 +75,18 @@ export default function Navigation() {
 </Link>
       </div>
 
+      
       {/* Mobile Menu Button */}
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="md:hidden ml-auto flex items-center justify-center w-11 h-11 rounded-full border border-gold/40 text-brown"
-        aria-label="Toggle menu"
-      >
-        ☰
-      </button>
+      
+<button
+  onClick={() => setIsOpen(!isOpen)}
+  className="md:hidden ml-auto flex items-center justify-center w-11 h-11 rounded-full bg-[#2B1A10] text-[#C8A45D] border border-[#C8A45D] hover:bg-[#C8A45D] hover:text-[#2B1A10] transition-all duration-300 cursor-pointer"
+  aria-label="Toggle menu"
+>
+  <span className="text-2xl leading-none">
+    ☰
+  </span>
+</button>
     </div>
   </div>
 </nav>
