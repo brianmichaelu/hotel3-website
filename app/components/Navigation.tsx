@@ -7,25 +7,14 @@ import Image from 'next/image';
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const scrollToSection = (id: string) => {
-  const section = document.getElementById(id);
-  if (!section) return;
-
-  const navbarOffset = 80;
-  const targetPosition =
-    section.getBoundingClientRect().top + window.pageYOffset - navbarOffset;
-
-  const startPosition = window.pageYOffset;
-  const distance = targetPosition - startPosition;
-  const duration = 1500; // increase this to make it slower
-  'use client';
-
-import { useState } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-
-export default function Navigation() {
-  const [isOpen, setIsOpen] = useState(false);
+  const navLinks = [
+    { label: 'Home', id: 'home' },
+    { label: 'Rooms', id: 'rooms' },
+    { label: 'Dining', id: 'dining' },
+    { label: 'Gallery', id: 'gallery' },
+    { label: 'About', id: 'about' },
+    { label: 'Contact', id: 'contact' },
+  ];
 
   const scrollToSection = (id: string) => {
     const section = document.getElementById(id);
@@ -62,15 +51,6 @@ export default function Navigation() {
     setIsOpen(false);
   };
 
-  const navLinks = [
-    { label: 'Home', id: 'home' },
-    { label: 'Rooms', id: 'rooms' },
-    { label: 'Dining', id: 'dining' },
-    { label: 'Gallery', id: 'gallery' },
-    { label: 'About', id: 'about' },
-    { label: 'Contact', id: 'contact' },
-  ];
-
   return (
     <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 border-b border-[#C8A45D]/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -96,6 +76,7 @@ export default function Navigation() {
             {navLinks.map((link) => (
               <button
                 key={link.id}
+                type="button"
                 onClick={() => scrollToSection(link.id)}
                 className="text-[#2B1A10] hover:text-[#C8A45D] transition-colors uppercase tracking-wider text-sm cursor-pointer"
               >
@@ -106,6 +87,7 @@ export default function Navigation() {
 
           {/* Desktop Book Button */}
           <button
+            type="button"
             onClick={() => scrollToSection('contact')}
             className="hidden md:inline-flex ml-auto items-center justify-center px-6 py-3 rounded-full bg-[#C8A45D] text-[#2B1A10] font-medium text-sm uppercase tracking-wider border border-[#C8A45D] hover:bg-[#2B1A10] hover:text-white transition-all duration-300 cursor-pointer"
           >
@@ -114,6 +96,7 @@ export default function Navigation() {
 
           {/* Mobile Menu Button */}
           <button
+            type="button"
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden ml-auto flex items-center justify-center w-11 h-11 rounded-full bg-[#2B1A10] text-[#C8A45D] border border-[#C8A45D] hover:bg-[#C8A45D] hover:text-[#2B1A10] transition-all duration-300 cursor-pointer"
             aria-label="Toggle menu"
@@ -129,6 +112,7 @@ export default function Navigation() {
               {navLinks.map((link) => (
                 <button
                   key={link.id}
+                  type="button"
                   onClick={() => scrollToSection(link.id)}
                   className="text-left text-[#2B1A10] hover:text-[#C8A45D] uppercase tracking-wider text-sm cursor-pointer"
                 >
@@ -137,6 +121,7 @@ export default function Navigation() {
               ))}
 
               <button
+                type="button"
                 onClick={() => scrollToSection('contact')}
                 className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-[#C8A45D] text-[#2B1A10] font-medium text-sm uppercase tracking-wider border border-[#C8A45D] cursor-pointer"
               >
