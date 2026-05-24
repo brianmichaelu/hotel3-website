@@ -72,7 +72,8 @@ export default function Navigation() {
       </Link>
 
       {/* Desktop Navigation */}
-      <div className="hidden md:flex items-center gap-10 ml-20">
+      <nav className="hidden md:flex items-center gap-10 ml-20" aria-label="Main navigation">
+      </nav>
         <Link href="#home" className="text-brown hover:text-gold transition-colors uppercase tracking-wider text-sm">
           Home
         </Link>
