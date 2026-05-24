@@ -47,22 +47,21 @@ export default function VideoShowcase() {
               Our luxury accommodations, world-class amenities, and warm hospitality create the perfect setting for an unforgettable experience in beautiful Dar es Salaam.
             </p>
            
-            <div className="flex flex-col sm:flex-row gap-4">
-  <div className="flex flex-col sm:flex-row gap-4">
-  <a
-    href="#rooms"
-    className="inline-flex items-center justify-center px-6 py-3 bg-[#8B5E24] text-white font-semibold text-sm rounded hover:bg-[#6F4818] transition-colors uppercase tracking-wider cursor-pointer"
-  >
-    Discover More
-  </a>
+                       <div className="flex flex-col sm:flex-row gap-4">
+              <a
+                href="#rooms"
+                className="inline-flex items-center justify-center px-6 py-3 bg-[#8B5E24] text-white font-semibold text-sm rounded hover:bg-[#6F4818] transition-colors uppercase tracking-wider cursor-pointer"
+              >
+                Discover More
+              </a>
 
-  <a
-    href="#gallery"
-    className="inline-flex items-center justify-center px-6 py-3 border-2 border-[#8B5E24] text-[#2B1A10] font-semibold text-sm rounded hover:bg-[#8B5E24] hover:text-white transition-colors uppercase tracking-wider cursor-pointer"
-  >
-    View Gallery
-  </a>
-</div>
+              <a
+                href="#gallery"
+                className="inline-flex items-center justify-center px-6 py-3 border-2 border-[#8B5E24] text-[#2B1A10] font-semibold text-sm rounded hover:bg-[#8B5E24] hover:text-white transition-colors uppercase tracking-wider cursor-pointer"
+              >
+                View Gallery
+              </a>
+            </div>
           </div>
         </div>
       </div>
