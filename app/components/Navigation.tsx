@@ -8,10 +8,39 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: 'smooth' });
-    setIsOpen(false);
+  const section = document.getElementById(id);
+  if (!section) return;
+
+  const navbarOffset = 80;
+  const targetPosition =
+    section.getBoundingClientRect().top + window.pageYOffset - navbarOffset;
+
+  const startPosition = window.pageYOffset;
+  const distance = targetPosition - startPosition;
+  const duration = 1500; // increase this to make it slower
+  let startTime: number | null = null;
+
+  const animation = (currentTime: number) => {
+    if (startTime === null) startTime = currentTime;
+
+    const timeElapsed = currentTime - startTime;
+    const progress = Math.min(timeElapsed / duration, 1);
+
+    const ease =
+      progress < 0.5
+        ? 2 * progress * progress
+        : 1 - Math.pow(-2 * progress + 2, 2) / 2;
+
+    window.scrollTo(0, startPosition + distance * ease);
+
+    if (timeElapsed < duration) {
+      requestAnimationFrame(animation);
+    }
   };
+
+  requestAnimationFrame(animation);
+  setIsOpen(false);
+};
 
   const navLinks = [
     { label: 'Home', id: 'home' },
