@@ -48,23 +48,20 @@ export default function VideoShowcase() {
             </p>
            
             <div className="flex flex-col sm:flex-row gap-4">
+  <div className="flex flex-col sm:flex-row gap-4">
   <a
-  href="#rooms"
-  aria-label="Discover more about our rooms"
-  className="inline-flex items-center justify-center px-6 py-3 bg-[#8B5E24] text-white font-semibold text-sm rounded hover:bg-[#6F4818] transition-colors uppercase tracking-wider cursor-pointer"
->
-  Discover More
-</a>
-
-  <span className="sr-only"> </span>
+    href="#rooms"
+    className="inline-flex items-center justify-center px-6 py-3 bg-[#8B5E24] text-white font-semibold text-sm rounded hover:bg-[#6F4818] transition-colors uppercase tracking-wider cursor-pointer"
+  >
+    Discover More
+  </a>
 
   <a
-  href="#gallery"
-  aria-label="View the resort gallery"
-  className="inline-flex items-center justify-center px-6 py-3 border-2 border-[#8B5E24] text-[#2B1A10] font-semibold text-sm rounded hover:bg-[#8B5E24] hover:text-white transition-colors uppercase tracking-wider cursor-pointer"
->
-  View Gallery
-</a>
+    href="#gallery"
+    className="inline-flex items-center justify-center px-6 py-3 border-2 border-[#8B5E24] text-[#2B1A10] font-semibold text-sm rounded hover:bg-[#8B5E24] hover:text-white transition-colors uppercase tracking-wider cursor-pointer"
+  >
+    View Gallery
+  </a>
 </div>
           </div>
         </div>
