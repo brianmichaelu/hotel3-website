@@ -46,7 +46,7 @@ export default function FacilitiesSection() {
     <section className="py-20 sm:py-28 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-light text-brown mb-6">
+          <h2 className="text-4xl sm:text-5xl font-light text-[#3B2416] mb-6">
             World-Class Facilities
           </h2>
           <div className="h-1 w-24 bg-gold mx-auto mb-8" />
@@ -62,7 +62,7 @@ export default function FacilitiesSection() {
               className="bg-cream p-8 rounded-lg hover:shadow-lg transition-shadow duration-300"
             >
               <div className="text-5xl mb-4">{facility.icon}</div>
-              <h3 className="text-lg font-light text-brown mb-3">{facility.title}</h3>
+              <h3 className="text-lg font-light text-[#2B1A10] mb-3">{facility.title}</h3>
               <p className="text-sm text-gray-700 font-light leading-relaxed">
                 {facility.description}
               </p>

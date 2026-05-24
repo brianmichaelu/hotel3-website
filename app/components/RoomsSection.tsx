@@ -6,6 +6,7 @@ interface Room {
   id: string;
   name: string;
   image: string;
+  price: string;
   description: string;
   features: string[];
 }
@@ -15,6 +16,7 @@ const rooms: Room[] = [
     id: '1',
     name: 'Standard Room',
     image: '/images/room-standard.png',
+    price: 'From TZS 45,000 / night',
     description:
       'Elegantly appointed with contemporary furnishings and premium amenities. Perfect for business travelers and leisure guests.',
     features: ['King or Twin Bed', 'Marble Bathroom', 'High-Speed WiFi', 'City or Garden View', 'Rainfall Shower'],
@@ -23,6 +25,7 @@ const rooms: Room[] = [
     id: '2',
     name: 'Deluxe Room',
     image: '/images/room-deluxe.png',
+    price: 'From TZS 65,000 / night',
     description:
       'Spacious and luxurious with enhanced amenities. Features a separate seating area and premium bedding for ultimate comfort.',
     features: [
@@ -38,6 +41,7 @@ const rooms: Room[] = [
     id: '3',
     name: 'Executive Suite',
     image: '/images/room-executive.png',
+    price: 'From TZS 95,000 / night',
     description:
       'The epitome of luxury with stunning views, exquisite furnishings, and exclusive perks. Your personal sanctuary in the city.',
     features: [
@@ -51,7 +55,6 @@ const rooms: Room[] = [
     ],
   },
 ];
-
 export default function RoomsSection() {
   const handleWhatsAppInquiry = (roomName: string) => {
     const message = `Hello! I'm interested in the ${roomName} at Dar Serenity Resort. Could you provide more information and availability?`;
@@ -63,7 +66,7 @@ export default function RoomsSection() {
     <section id="rooms" className="py-20 sm:py-28 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-light text-brown mb-6">
+          <h2 className="text-4xl sm:text-5xl font-light text-[#3B2416] mb-6">
             Our Suites
           </h2>
           <div className="h-1 w-24 bg-gold mx-auto mb-8" />
@@ -90,20 +93,28 @@ export default function RoomsSection() {
 
               {/* Room Info */}
               <div className="bg-white p-6 sm:p-8">
-                <h3 className="text-2xl font-light text-brown mb-3">{room.name}</h3>
-                <p className="text-gray-700 text-sm font-light mb-6 leading-relaxed">
-                  {room.description}
-                </p>
+  <h3 className="text-2xl sm:text-3xl font-semibold text-[#2B1A10] mb-3">
+  {room.name}
+</h3>
 
-                {/* Features */}
-                <ul className="space-y-2 mb-8">
-                  {room.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start">
-                      <span className="text-gold mr-3 font-light">✓</span>
-                      <span className="text-sm text-gray-600 font-light">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
+<p className="text-lg sm:text-xl font-bold text-[#9A6A2F] mb-4">
+  {room.price}
+</p>
+
+  <p className="text-gray-700 text-sm font-light mb-6 leading-relaxed">
+    {room.description}
+  </p>
+
+  {/* Features */}
+  <ul className="space-y-2 mb-8">
+    {room.features.map((feature, idx) => (
+      <li key={idx} className="flex items-start">
+        <span className="text-gold mr-3 font-light">✓</span>
+        <span className="text-sm text-gray-600 font-light">{feature}</span>
+      </li>
+    ))}
+  </ul>
+
 
                 {/* WhatsApp Button */}
                 <button

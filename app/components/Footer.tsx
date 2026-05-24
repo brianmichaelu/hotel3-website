@@ -11,7 +11,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-brown text-white">
+    <footer className="bg-gray-900 text-white py-12 px-6 mt-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* About */}
@@ -30,7 +30,7 @@ export default function Footer() {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-white/80 hover:text-gold transition-colors font-light text-sm"
+                    className="text-white/80 hover:text-[#C8A45D] transition-colors font-light text-sm cursor-pointer"
                   >
                     {link.label}
                   </a>
@@ -47,7 +47,7 @@ export default function Footer() {
                 <p className="text-white/80">Mobile / WhatsApp:</p>
                 <a
                   href="https://wa.me/255689824682"
-                  className="text-gold hover:text-gold/80 transition-colors"
+                  className="text-gold hover:text-[#C8A45D]/80 transition-colors cursor-pointer"
                 >
                   +255 689 824 682
                 </a>
@@ -56,7 +56,7 @@ export default function Footer() {
                 <p className="text-white/80">Email:</p>
                 <a
                   href="mailto:lubrun.enterprises@gmail.com"
-                  className="text-gold hover:text-gold/80 transition-colors"
+                  className="text-gold hover:text-[#C8A45D]/80 transition-colors cursor-pointer"
                 >
                   lubrun.enterprises@gmail.com
                 </a>
@@ -84,17 +84,13 @@ export default function Footer() {
             <p className="text-white/70 font-light text-sm mb-4 sm:mb-0">
               © {currentYear} Dar Serenity Resort. All rights reserved.
             </p>
-            <div className="flex gap-6">
-              <a href="#" className="text-white/70 hover:text-gold transition-colors font-light text-sm">
-                Privacy Policy
-              </a>
-              <a href="#" className="text-white/70 hover:text-gold transition-colors font-light text-sm">
-                Terms & Conditions
-              </a>
-              <a href="#" className="text-white/70 hover:text-gold transition-colors font-light text-sm">
-                Sitemap
-              </a>
-            </div>
+            <a
+  href="#gallery"
+  aria-label="View the resort gallery"
+  className="inline-flex items-center justify-center px-6 py-3 border-2 border-[#C8A45D] text-[#C8A45D] font-semibold text-sm rounded hover:bg-[#C8A45D] hover:text-[#2B1A10] transition-colors uppercase tracking-wider cursor-pointer"
+>
+  View Gallery
+</a>
           </div>
         </div>
       </div>
