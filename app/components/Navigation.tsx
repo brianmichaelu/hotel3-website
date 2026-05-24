@@ -35,10 +35,7 @@ export default function Navigation() {
       const timeElapsed = currentTime - startTime;
       const progress = Math.min(timeElapsed / duration, 1);
 
-      const ease =
-        progress < 0.5
-          ? 2 * progress * progress
-          : 1 - Math.pow(-2 * progress + 2, 2) / 2;
+      const ease = 1 - Math.pow(1 - progress, 3);
 
       window.scrollTo(0, startPosition + distance * ease);
 
