@@ -66,12 +66,13 @@ export default function Navigation() {
 
       {/* Book Button */}
       <div className="hidden md:flex ml-auto">
-        <Link
-          href="#contact"
-          className="px-6 py-3 bg-gold text-white text-sm uppercase tracking-wider rounded hover:bg-gold/90 transition-colors"
-        >
-          Book Now
-        </Link>
+        {/* Book Button */}
+<Link
+  href="#contact"
+  className="hidden md:inline-flex items-center justify-center ml-8 px-6 py-3 rounded-full bg-[#C8A45D] text-[#2B1A10] font-medium text-sm uppercase tracking-wider border border-[#C8A45D] hover:bg-[#2B1A10] hover:text-white transition-all duration-300"
+>
+  Book Now
+</Link>
       </div>
 
       {/* Mobile Menu Button */}
