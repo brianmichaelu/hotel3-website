@@ -15,11 +15,6 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Dar Serenity Resort",
   description: "A luxury resort experience in Dar es Salaam.",
-  icons: {
-    icon: "/icon.png?v=3",
-    shortcut: "/icon.png?v=3",
-    apple: "/icon.png?v=3",
-  },
 };
 
 export default function RootLayout({
