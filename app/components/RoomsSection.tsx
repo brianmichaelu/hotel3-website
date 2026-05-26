@@ -67,12 +67,12 @@ export default function RoomsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8">
           <h2 className="text-4xl sm:text-5xl font-light text-[#3B2416] mb-4">
-            Our Suites
-          </h2>
-          <div className="h-1 w-24 bg-gold mx-auto mb-8" />
-          <p className="text-lg text-gray-700 font-light max-w-3xl mx-auto">
+                  Our Suites
+        </h2>
+        <div className="h-1 w-24 bg-gold mx-auto mb-4" />
+        <p className="text-lg text-gray-700 font-light max-w-3xl mx-auto">
             Each room is a sanctuary of comfort and elegance
-          </p>
+        </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
