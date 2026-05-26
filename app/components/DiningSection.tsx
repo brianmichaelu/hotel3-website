@@ -37,7 +37,7 @@ export default function DiningSection() {
   ];
 
   return (
-    <section id="dining" className="scroll-mt-24 bg-[#F8F4EC] pt-16 pb-24">
+    <section id="dining" className="scroll-mt-24 bg-[#F8F4EC] pt-12 pb-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Main Dining Content */}
