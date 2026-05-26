@@ -19,7 +19,7 @@ export default function AboutSection() {
   ];
 
   return (
-    <section id="about" className="scroll-mt-24 bg-white pt-12 pb-24">
+    <section id="about" className="scroll-mt-24 bg-white pt-10 pb-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading */}
