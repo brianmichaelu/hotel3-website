@@ -69,7 +69,7 @@ export default function RoomsSection() {
           <h2 className="text-4xl sm:text-5xl font-light text-[#3B2416] mb-4">
                   Our Suites
         </h2>
-        <div className="h-1 w-24 bg-gold mx-auto mb-4" />
+        <div className="h-1 w-24 bg-[#C9A24D] mx-auto mb-4" />
         <p className="text-lg text-gray-700 font-light max-w-3xl mx-auto">
             Each room is a sanctuary of comfort and elegance
         </p>
